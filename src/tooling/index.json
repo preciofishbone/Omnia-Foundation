@@ -1,26 +1,6 @@
-{
-    "itemTemplates": [
-        {            
-            "title": "Omnia Control",
-            "description": "Template for Omnia control with settings form",
-            "sources": {
-                "folder": "src/tooling/item-templates/omnia-control",
-                "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
-            }            
-        }
-    ],
-    "samples": [
-        {
-            "title": "Hello World Control",
-            "description": "Simple Omnia control that display a text message from an Omnia setting",
-            "sources": {
-                "folder": "src/tooling/samples/helloworld-control",
-                "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
-            },
-            "project": {
-                "name": "ExtPkg",
-                "folder": "TenantResources/Core/Components/HelloWorld"
-            }
-        }
-    ]
-}
+[
+    {
+        "versionNumber": "1.0.1.3967",
+        "requiredFoundationVersion": "1.0.1.3967"
+    }
+]
