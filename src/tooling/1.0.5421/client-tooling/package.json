@@ -1,0 +1,17 @@
+{
+  "name": "omnia",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "@omnia/foundation": "1.0.5491",
+    "glob": "5.0.13",
+    "gulp": "3.9.1",
+    "gulp-cli": "1.2.2",
+    "typescript": "2.2.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
