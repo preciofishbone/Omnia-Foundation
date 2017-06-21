@@ -1,1 +1,3 @@
 // Not implemented
+// $viewId$
+// $tenantResourceId$
