@@ -5,7 +5,7 @@
     "build": "gulp build"
   },
   "dependencies": {
-    "@omnia/foundation": "1.0.5516"
+    "@omnia/foundation": "1.0.5517"
   },
    "devDependencies": {
     "glob": "5.0.13",
