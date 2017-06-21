@@ -1,0 +1,10 @@
+﻿{
+  "Id": "$guid1$",
+  "Version": "$extensionversion$",
+  "Title": "$extensionname$",
+  "Description": "",
+  "TenantResourceFolders": [ "TenantResources" ],
+  "ScriptSettings": {
+    "OmitModulePath": "/TenantResources"
+  }
+}

@@ -1,0 +1,16 @@
+﻿{
+  "TenantId": "$tenantid$",
+  "ApiSecret": "$foundationapisecret$",
+  "FoundationUrl": "$foundationurl$",
+  "Hosting": {
+    "Enabled": true,
+    "Port": 9900,
+    "UseLiveReload": true
+  },
+  "Angular": {
+    "AOT": {
+      "RunOnBuild": true
+    }
+  },
+  "FeatureActivations": []
+}
