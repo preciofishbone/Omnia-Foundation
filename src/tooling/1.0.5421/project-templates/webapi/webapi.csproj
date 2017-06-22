@@ -96,20 +96,20 @@
       <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Omnia.Foundation.Models, Version=$foundationapiversion$, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Omnia.Foundation.Models.$foundationapiversion$.0\lib\net46\Omnia.Foundation.Models.dll</HintPath>
+    <Reference Include="Omnia.Foundation.Models, Version=$foundationapiversion$.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Omnia.Foundation.Models.$foundationapiversion$\lib\net46\Omnia.Foundation.Models.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Omnia.Foundation.Extensibility, Version=$foundationapiversion$, Culture=neutral, PublicKeyToken=36dd5a191de9b98a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.$foundationapiversion$.0\lib\net46\Omnia.Foundation.Extensibility.dll</HintPath>
+    <Reference Include="Omnia.Foundation.Extensibility, Version=$foundationapiversion$.0, Culture=neutral, PublicKeyToken=36dd5a191de9b98a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.$foundationapiversion$\lib\net46\Omnia.Foundation.Extensibility.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Omnia.Foundation.Extensibility.WebApi, Version=$foundationapiversion$, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.WebApi.$foundationapiversion$.0\lib\net46\Omnia.Foundation.Extensibility.WebApi.dll</HintPath>
+    <Reference Include="Omnia.Foundation.Extensibility.WebApi, Version=$foundationapiversion$.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.WebApi.$foundationapiversion$\lib\net46\Omnia.Foundation.Extensibility.WebApi.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Omnia.Foundation.Extensibility.Core, Version=$foundationapiversion$, Culture=neutral, PublicKeyToken=122cdc4435628e36, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.Core.$foundationapiversion$.0\lib\net46\Omnia.Foundation.Extensibility.Core.dll</HintPath>
+    <Reference Include="Omnia.Foundation.Extensibility.Core, Version=$foundationapiversion$.0, Culture=neutral, PublicKeyToken=122cdc4435628e36, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Omnia.Foundation.Extensibility.Core.$foundationapiversion$\lib\net46\Omnia.Foundation.Extensibility.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Drawing" />
