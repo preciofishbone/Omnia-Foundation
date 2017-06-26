@@ -6,7 +6,7 @@
     "omf-after-build": "gulp omf-after-build"
   },
   "dependencies": {
-    "@omnia/tooling": "latest"
+    "@omnia/foundation": "latest"
   },
   "devDependencies": {
     "glob": "5.0.13",
