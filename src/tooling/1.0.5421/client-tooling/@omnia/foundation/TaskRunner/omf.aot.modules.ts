@@ -1,0 +1,1 @@
+﻿// declare your any root angular module here, ex: import { GlobalNavigationModule } from '../TenantResources/Omnia/Intranet/Navigation/GlobalNavigation';

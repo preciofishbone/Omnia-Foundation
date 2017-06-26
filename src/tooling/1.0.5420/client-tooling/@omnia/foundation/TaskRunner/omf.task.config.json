@@ -1,0 +1,66 @@
+﻿{
+  "disableTasks": [],
+  "less": {
+    "compile": {
+      "tenantResource": {
+        "files": [
+          "TenantResources/**/*.less"
+        ],
+        "dist": "TenantResources"
+      }
+    },
+    "watch": [ "**/*.less" ],
+    "includeLessPath": [
+      "TenantResources"
+    ]
+  },
+  "angular":{
+	"webpack": {
+		"basePaths": [ "TenantResources" ],
+		"compileFiles": [
+		  "TenantResources/**/*.js"
+		],
+		"ignoreFiles": [],
+		"flatModules": [],
+		"watch": [ "TenantResources/**/*.js" ]
+	},
+	"aot": {
+		"compileAotTsFiles": [
+		  "TenantResources/**/*.ngfactory.ts"
+		],
+		"cleanBefore": [
+		  "TenantResources/**/*.ngfactory.ts"
+		],
+		"cleanAfter": [ "TenantResources/**/*.ngsummary.json", "TenantResources/**/*.metadata.json" ],
+		"ngc": {
+		  "compilerOptions": {
+			"target": "es5",
+			"module": "commonjs",
+			"moduleResolution": "node",
+			"lib": [ "es2015", "dom" ],
+			"declaration": false,
+			"sourceMap": false,
+			"removeComments": false,
+			"noImplicitAny": false,
+			"emitDecoratorMetadata": true,
+			"experimentalDecorators": true,
+			"types": []
+		  },
+		  "angularCompilerOptions": {
+			"genDir": ".",
+			"skipMetadataEmit": false,
+			"skipTemplateCodegen": false,
+			"generateCodeForLibraries": true,
+			"sourceMap": false,
+			"debug": false
+		  },
+		  "exclude": [
+			"node_modules",
+			"TaskRunner",
+			"TenantResources/**/*.ngsummary.ts",
+			"TenantResources/**/*.ngfactory.ts"
+		  ]
+		}
+	  }
+  }
+}

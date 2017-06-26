@@ -1,0 +1,17 @@
+﻿{
+  "disableTasks": [],
+  "less": {
+    "compile": {
+      "tenantResource": {
+        "files": [
+          "TenantResources/**/*.less"
+        ],
+        "dist": "TenantResources"
+      }
+    },
+    "watch": [ "**/*.less" ],
+    "includeLessPath": [
+      "TenantResources"
+    ]
+  }
+}
