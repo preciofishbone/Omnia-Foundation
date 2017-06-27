@@ -83,7 +83,7 @@
                     },
                     "destination":{
                         "projectName": "ExtPkg",
-                        "folder": "ProvisionPipelines"
+                        "folder": "ProvisioningPipelines"
                     }
                 }
             ]
