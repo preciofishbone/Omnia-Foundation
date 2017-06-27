@@ -1,1 +1,1 @@
-require('./TaskRunner/tasks/index.js');
+require('./TaskRunner/Tasks/index.js');

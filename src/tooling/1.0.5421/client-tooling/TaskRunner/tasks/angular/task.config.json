@@ -1,22 +1,22 @@
 ﻿{
   "angular": {
     "webpack": {
-      "basePaths": [ "TenantResources/Angular2" ],
+      "basePaths": [ "TenantResources" ],
       "compileFiles": [
-        "TenantResources/Angular2/**/*.js"
+        "TenantResources/**/*.js"
       ],
       "ignoreFiles": [],
       "flatModules": [],
-      "watch": [ "TenantResources/Angular2/**/*.js" ]
+      "watch": [ "TenantResources/**/*.js" ]
     },
     "aot": {
       "compileAotTsFiles": [
-        "TenantResources/Angular2/**/*.ngfactory.ts"
+        "TenantResources/**/*.ngfactory.ts"
       ],
       "cleanBefore": [
-        "TenantResources/Angular2/**/*.ngfactory.ts"
+        "TenantResources/**/*.ngfactory.ts"
       ],
-      "cleanAfter": [ "TenantResources/Angular2/**/*.ngsummary.json", "TenantResources/Angular2/**/*.metadata.json" ],
+      "cleanAfter": [ "TenantResources/**/*.ngsummary.json", "TenantResources/**/*.metadata.json" ],
       "ngc": {
         "compilerOptions": {
           "target": "es5",
@@ -41,8 +41,8 @@
         "exclude": [
           "node_modules",
           "TaskRunner",
-          "TenantResources/Angular2/**/*.ngsummary.ts",
-          "TenantResources/Angular2/**/*.ngfactory.ts"
+          "TenantResources/**/*.ngsummary.ts",
+          "TenantResources/**/*.ngfactory.ts"
         ]
       }
     }
