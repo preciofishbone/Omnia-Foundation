@@ -1,0 +1,7 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "@omnia/foundation": "latest"
+  }
+}
