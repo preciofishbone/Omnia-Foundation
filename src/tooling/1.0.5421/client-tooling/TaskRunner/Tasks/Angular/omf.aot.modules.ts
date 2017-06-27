@@ -1,1 +1,1 @@
-﻿// decalre your root ngmodule here for aot compile
+﻿// declare your root ngmodules here for aot compilation
