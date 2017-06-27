@@ -96,6 +96,15 @@
                      "payload": "Add"   
                     },
             "samples": []
+        },
+        {
+            "title": "Setup basic folder structure",
+            "requiredForChildren": true,
+            "action": {
+                     "type": "add-folders",
+                     "payload": "Add"   
+                    },
+            "samples": []
         }
     ]   
 }
