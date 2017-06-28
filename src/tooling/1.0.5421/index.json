@@ -75,15 +75,15 @@
                     }
                 },
                 {
-                    "title": "Favorite Icon Provision Pipeline",
-                    "description": "Provision pipeline for setting favorite icon in SharePoint",
+                    "title": "Favorite Icon Provisioning Pipeline",
+                    "description": "Provisioning pipeline for setting favorite icon in SharePoint",
                     "source":{
-                        "folder": "samples/favicon-provision-pipeline",
-                        "files": [ "FavIconProvisionPipeline.cs" ]
+                        "folder": "samples/favicon-provisioning-pipeline",
+                        "files": [ "FavIconProvisioningPipeline.cs" ]
                     },
                     "destination":{
                         "projectName": "ExtPkg",
-                        "folder": "ProvisionPipelines"
+                        "folder": "ProvisioningPipelines"
                     }
                 }
             ]
