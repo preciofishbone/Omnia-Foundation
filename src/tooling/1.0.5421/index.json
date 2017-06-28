@@ -89,8 +89,21 @@
             ]
         },
         {
-            "title": "Web API",
+            "title": "Create Web API Project",
             "requiredForChildren": true,
+            "action": {
+                     "type": "add-webapi",
+                     "payload": "Add"   
+                    },
+            "samples": []
+        },
+        {
+            "title": "Setup basic folder structure",
+            "requiredForChildren": true,
+            "action": {
+                     "type": "add-folders",
+                     "payload": "Add"   
+                    },
             "samples": []
         }
     ]   
