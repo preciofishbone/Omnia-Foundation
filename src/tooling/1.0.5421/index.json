@@ -12,100 +12,90 @@
     ],
     "options": [
         {
-            "title": "Client side",
+            "title": "Extension Package",
             "options": [
-                { 
-                    "title": "Angular Tooling",
-                    "requiredForChildren": true,
-                    "action": {
-                     "type": "client-task",
-                     "payload": "Angular"   
-                    },
-                    "samples": [
-                        {
-                            "title": "Hello World Control",
-                            "description": "Simple Omnia control that display a text message from an Omnia setting",
-                            "source": {
-                                "folder": "samples/helloworld-control",
-                                "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
+                {
+                    "title": "Client Side",
+                    "options": [
+                        { 
+                            "title": "Angular Tooling",
+                            "requiredForChildren": true,
+                            "action": {
+                                "type": "client-task",
+                                "payload": "Angular"   
                             },
-                            "destination": {
-                                "projectName": "ExtPkg",
-                                "folder": "TenantResources/Core/Components/HelloWorld"
+                            "samples": [
+                                {
+                                    "title": "Hello World Control",
+                                    "description": "Simple Omnia control that display a text message from an Omnia setting",
+                                    "source": {
+                                        "folder": "samples/helloworld-control",
+                                        "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
+                                    },
+                                    "destination": {
+                                        "projectName": "ExtPkg",
+                                        "folder": "TenantResources/Core/Components/HelloWorld"
+                                    }
+                                }
+                            ]
+                        },
+                        { 
+                            "title": "Less Tooling",
+                            "requiredForChildren": true,
+                            "action": {
+                                "type": "client-task",
+                                "payload": "Less"   
                             }
                         }
                     ]
                 },
-                { 
-                    "title": "Less Tooling",
-                    "requiredForChildren": true,
-                    "action": {
-                     "type": "client-task",
-                     "payload": "Less"   
-                    },
+                {
+                    "title": "Server Side",
                     "samples": [
                         {
-                            "title": "Hello World Control",
-                            "description": "Simple Omnia control that display a text message from an Omnia setting",
-                            "source": {
-                                "folder": "samples/helloworld-control",
-                                "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
+                            "title": "Omnia Feature",
+                            "Description": "",
+                            "source":{
+                                "folder": "samples/omnia-feature",
+                                "files": [ "CoreFeature.cs" ]
                             },
-                            "destination": {
+                            "destination":{
                                 "projectName": "ExtPkg",
-                                "folder": "TenantResources/Core/Components/HelloWorld"
+                                "folder": "Features"
+                            }
+                        },
+                        {
+                            "title": "Favorite Icon Provisioning Pipeline",
+                            "description": "Provisioning pipeline for setting favorite icon in SharePoint",
+                            "source":{
+                                "folder": "samples/favicon-provisioning-pipeline",
+                                "files": [ "FavIconProvisioningPipeline.cs" ]
+                            },
+                            "destination":{
+                                "projectName": "ExtPkg",
+                                "folder": "ProvisioningPipelines"
                             }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "title": "Server side",
-            "samples": [
-                {
-                    "title": "Omnia Feature",
-                    "Description": "",
-                    "source":{
-                        "folder": "samples/omnia-feature",
-                        "files": [ "CoreFeature.cs" ]
-                    },
-                    "destination":{
-                        "projectName": "ExtPkg",
-                        "folder": "Features"
-                    }
                 },
                 {
-                    "title": "Favorite Icon Provision Pipeline",
-                    "description": "Provision pipeline for setting favorite icon in SharePoint",
-                    "source":{
-                        "folder": "samples/favicon-provision-pipeline",
-                        "files": [ "FavIconProvisionPipeline.cs" ]
-                    },
-                    "destination":{
-                        "projectName": "ExtPkg",
-                        "folder": "ProvisioningPipelines"
-                    }
+                    "title": "Setup basic folder structure",
+                    "requiredForChildren": true,
+                    "action": {
+                            "type": "add-folders",
+                            "payload": "Add"   
+                            },
+                    "samples": []
                 }
             ]
-        },
+        },    
         {
-            "title": "Create Web API Project",
-            "requiredForChildren": true,
+            "title": "Web API",
             "action": {
-                     "type": "add-webapi",
-                     "payload": "Add"   
-                    },
-            "samples": []
-        },
-        {
-            "title": "Setup basic folder structure",
-            "requiredForChildren": true,
-            "action": {
-                     "type": "add-folders",
-                     "payload": "Add"   
-                    },
-            "samples": []
-        }
+                "type": "add-webapi",
+                "payload": "Add"   
+            }           
+        }    
+       
     ]   
 }
