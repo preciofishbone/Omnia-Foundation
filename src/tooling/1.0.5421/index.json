@@ -7,7 +7,8 @@
             "description": "Template for Omnia control with settings form",
             "source": {
                 "folder": "item-templates/omnia-control",
-                "replace": "control"
+                "replace": "control",
+                "defaultName": "control.ts"
             }            
         },
          {   
@@ -17,17 +18,19 @@
             "description": "Template for creating a job that runs on a specific schedule",
             "source": {
                 "folder": "item-templates/job-timer",
-                "replace": "job"
+                "replace": "job",
+                "defaultName": "job.cs"
             }            
         },
          {   
             "category": "Localization",         
             "title": "Public Localization",
             "icon": "localize",
-            "description": "A localization file",
+            "description": "A localization file for public",
             "source": {
                 "folder": "item-templates/localization-public",
-                "replace": "localize"
+                "replace": "localize",
+                "defaultName": "mylocalization.loc.json"
             }            
         },
         {   
@@ -37,7 +40,8 @@
             "description": "A localization file for Omnia Admin",
             "source": {
                 "folder": "item-templates/localization-admin",
-                "replace": "localize"
+                "replace": "localize",
+                "defaultName": "mylocalization.admin.loc.json"
             }            
         }
     ],
