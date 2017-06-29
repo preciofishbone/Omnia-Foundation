@@ -6,7 +6,7 @@
             "description": "Template for Omnia control with settings form",
             "source": {
                 "folder": "item-templates/omnia-control",
-                "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
+                "replace": "control"
             }            
         }
     ],
