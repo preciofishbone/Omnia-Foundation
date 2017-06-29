@@ -1,0 +1,13 @@
+﻿{
+  "Admin": {
+    "[your_project_namespace_here]": {
+      "[your_feature_area_namespace_here]": {
+        "Key1": "Value1",
+        "Key2": {
+          "Key2.1": "Value2.1",
+          "Key2.2": "Value2.2"
+        }
+      }
+    }
+  }    
+}

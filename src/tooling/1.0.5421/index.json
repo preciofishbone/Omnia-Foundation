@@ -8,7 +8,7 @@
             "source": {
                 "folder": "item-templates/omnia-control",
                 "replace": "control",
-                "defaultName": "control.ts"
+                "defaultName": "OmniaControl"
             }            
         },
          {   
@@ -18,30 +18,41 @@
             "description": "Template for creating a job that runs on a specific schedule",
             "source": {
                 "folder": "item-templates/job-timer",
-                "replace": "job",
-                "defaultName": "job.cs"
+                "replace": "Job",
+                "defaultName": "Job.cs"
+            }            
+        },
+        {   
+            "category": "Server side",         
+            "title": "Timer Job",
+            "icon": "structure",
+            "description": "Template for creating a job that listens to a queue",
+            "source": {
+                "folder": "item-templates/job-queue",
+                "replace": "Job",
+                "defaultName": "Job.cs"
             }            
         },
          {   
             "category": "Localization",         
             "title": "Public Localization",
             "icon": "localize",
-            "description": "A localization file for public",
+            "description": "A localization file for use in the public UX",
             "source": {
                 "folder": "item-templates/localization-public",
-                "replace": "localize",
-                "defaultName": "mylocalization.loc.json"
+                "replace": "public",
+                "defaultName": "PublicLocalization"
             }            
         },
         {   
             "category": "Localization",         
             "title": "Admin Localization",
             "icon": "localize",
-            "description": "A localization file for Omnia Admin",
+            "description": "A localization file for Omnia Admin UX",
             "source": {
                 "folder": "item-templates/localization-admin",
-                "replace": "localize",
-                "defaultName": "mylocalization.admin.loc.json"
+                "replace": "admin",
+                "defaultName": "AdminLocalization"
             }            
         }
     ],
