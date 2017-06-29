@@ -24,7 +24,7 @@
         },
         {   
             "category": "Server side",         
-            "title": "Timer Job",
+            "title": "Queue Job",
             "icon": "structure",
             "description": "Template for creating a job that listens to a queue",
             "source": {
