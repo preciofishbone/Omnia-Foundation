@@ -8,6 +8,15 @@
                 "folder": "item-templates/omnia-control",
                 "replace": "control"
             }            
+        },
+         {   
+            "category": "Server side",         
+            "title": "Timer Job",
+            "description": "Template for creating a job that runs on a specific schedule",
+            "source": {
+                "folder": "item-templates/job-timer",
+                "replace": "job"
+            }            
         }
     ],
     "options": [
