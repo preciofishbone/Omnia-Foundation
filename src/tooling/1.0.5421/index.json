@@ -3,6 +3,7 @@
         {   
             "category": "Client side",         
             "title": "Omnia Control",
+            "icon": "code",
             "description": "Template for Omnia control with settings form",
             "source": {
                 "folder": "item-templates/omnia-control",
@@ -12,10 +13,31 @@
          {   
             "category": "Server side",         
             "title": "Timer Job",
+            "icon": "structure",
             "description": "Template for creating a job that runs on a specific schedule",
             "source": {
                 "folder": "item-templates/job-timer",
                 "replace": "job"
+            }            
+        },
+         {   
+            "category": "Localization",         
+            "title": "Public Localization",
+            "icon": "localize",
+            "description": "A localization file",
+            "source": {
+                "folder": "item-templates/localization-public",
+                "replace": "localize"
+            }            
+        },
+        {   
+            "category": "Localization",         
+            "title": "Admin Localization",
+            "icon": "localize",
+            "description": "A localization file for Omnia Admin",
+            "source": {
+                "folder": "item-templates/localization-admin",
+                "replace": "localize"
             }            
         }
     ],
