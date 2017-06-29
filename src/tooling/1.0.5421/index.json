@@ -1,6 +1,7 @@
 {
     "itemTemplates": [
-        {            
+        {   
+            "category": "Client side",         
             "title": "Omnia Control",
             "description": "Template for Omnia control with settings form",
             "source": {
