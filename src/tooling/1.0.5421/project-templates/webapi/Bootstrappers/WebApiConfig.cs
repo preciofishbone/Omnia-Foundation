@@ -7,7 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using Omnia.Foundation.Extensibility.WebApi.Handlers;
 
-namespace ExtPkgApi.Bootstrappers
+namespace $safeprojectname$.Bootstrappers
 {
     public static class WebApiConfig
     {

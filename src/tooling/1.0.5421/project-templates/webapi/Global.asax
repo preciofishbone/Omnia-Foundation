@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="ExtPkgApi.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="$safeprojectname$.Global" Language="C#" %>

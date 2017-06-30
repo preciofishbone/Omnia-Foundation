@@ -1,4 +1,4 @@
-﻿using ExtPkgApi.Bootstrappers;
+﻿using $safeprojectname$.Bootstrappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using Omnia.Foundation.Extensibility.WebApi.Handlers;
 using System.Web.Routing;
 using System.Web.Mvc;
 
-namespace ExtPkgApi
+namespace $safeprojectname$
 {
     public class Global : System.Web.HttpApplication
     {
