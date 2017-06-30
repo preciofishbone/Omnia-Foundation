@@ -1,58 +1,103 @@
 {
     "itemTemplates": [
-        {   
-            "category": "Client side",         
+        {      
+            "defaultName": "OmniaControl",  
             "title": "Omnia Control",
+            "category": "Client side", 
             "icon": "code",
             "description": "Template for Omnia control with settings form",
             "source": {
                 "folder": "item-templates/omnia-control",
-                "replace": "control",
-                "defaultName": "OmniaControl"
+                "files":[
+                    {
+                        "name": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "name": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    },
+                    {
+                        "name": "control-settings.ts",
+                        "targetName": "$fileinputname$-settings.ts"
+                    },
+                    {
+                        "name": "control-settings.html",
+                        "targetName": "$fileinputname$-settings.html"
+                    }
+                ]
             }            
         },
          {   
+            "defaultName": "Job",  
+            "title": "Timer Job", 
             "category": "Server side",         
-            "title": "Timer Job",
             "icon": "structure",
             "description": "Template for creating a job that runs on a specific schedule",
             "source": {
                 "folder": "item-templates/job-timer",
-                "replace": "Job",
-                "defaultName": "Job.cs"
+                "files":[
+                    {
+                        "name": "Job.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
             }            
         },
         {   
-            "category": "Server side",         
+            "defaultName": "Job",
             "title": "Queue Job",
+            "category": "Server side",         
             "icon": "structure",
             "description": "Template for creating a job that listens to a queue",
             "source": {
                 "folder": "item-templates/job-queue",
-                "replace": "Job",
-                "defaultName": "Job.cs"
+                 "files":[
+                    {
+                        "name": "Job.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
             }            
         },
-         {   
-            "category": "Localization",         
+         {  
+            "defaultName": "PublicLocalization", 
             "title": "Public Localization",
+            "category": "Localization",         
             "icon": "localize",
             "description": "A localization file for use in the public UX",
             "source": {
                 "folder": "item-templates/localization-public",
-                "replace": "public",
-                "defaultName": "PublicLocalization"
+                 "files":[
+                    {
+                        "name": "public.loc.json",
+                        "targetName": "$fileinputname$.loc.json"
+                    },
+                    {
+                        "name": "public.loc.sv-se.json",
+                        "targetName": "$fileinputname$.loc.sv-se.json"
+                    }
+                ]
             }            
         },
         {   
-            "category": "Localization",         
+            "defaultName": "AdminLocalization",
             "title": "Admin Localization",
+            "category": "Localization",         
             "icon": "localize",
             "description": "A localization file for Omnia Admin UX",
             "source": {
                 "folder": "item-templates/localization-admin",
-                "replace": "admin",
-                "defaultName": "AdminLocalization"
+                 "files":[
+                    {
+                        "name": "admin.loc.json",
+                        "targetName": "$fileinputname$.loc.json"
+                    },
+                    {
+                        "name": "admin.loc.sv-se.json",
+                        "targetName": "$fileinputname$.loc.sv-se.json"
+                    }
+                ]
             }            
         }
     ],
