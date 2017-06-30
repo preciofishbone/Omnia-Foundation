@@ -10,19 +10,19 @@
                 "folder": "item-templates/omnia-control",
                 "files":[
                     {
-                        "name": "control.ts",
+                        "sourceName": "control.ts",
                         "targetName": "$fileinputname$.ts"
                     },
                     {
-                        "name": "control.html",
+                        "sourceName": "control.html",
                         "targetName": "$fileinputname$.html"
                     },
                     {
-                        "name": "control-settings.ts",
+                        "sourceName": "control-settings.ts",
                         "targetName": "$fileinputname$-settings.ts"
                     },
                     {
-                        "name": "control-settings.html",
+                        "sourceName": "control-settings.html",
                         "targetName": "$fileinputname$-settings.html"
                     }
                 ]
@@ -38,7 +38,7 @@
                 "folder": "item-templates/job-timer",
                 "files":[
                     {
-                        "name": "Job.cs",
+                        "sourceName": "Job.cs",
                         "targetName": "$fileinputname$.cs"
                     }
                 ]
@@ -54,7 +54,7 @@
                 "folder": "item-templates/job-queue",
                  "files":[
                     {
-                        "name": "Job.cs",
+                        "sourceName": "Job.cs",
                         "targetName": "$fileinputname$.cs"
                     }
                 ]
@@ -70,11 +70,11 @@
                 "folder": "item-templates/localization-public",
                  "files":[
                     {
-                        "name": "public.loc.json",
+                        "sourceName": "public.loc.json",
                         "targetName": "$fileinputname$.loc.json"
                     },
                     {
-                        "name": "public.loc.sv-se.json",
+                        "sourceName": "public.loc.sv-se.json",
                         "targetName": "$fileinputname$.loc.sv-se.json"
                     }
                 ]
@@ -90,11 +90,11 @@
                 "folder": "item-templates/localization-admin",
                  "files":[
                     {
-                        "name": "admin.loc.json",
+                        "sourceName": "admin.loc.json",
                         "targetName": "$fileinputname$.loc.json"
                     },
                     {
-                        "name": "admin.loc.sv-se.json",
+                        "sourceName": "admin.loc.sv-se.json",
                         "targetName": "$fileinputname$.loc.sv-se.json"
                     }
                 ]
@@ -121,7 +121,7 @@
                                     "description": "Simple Omnia control that display a text message from an Omnia setting",
                                     "source": {
                                         "folder": "samples/helloworld-control",
-                                        "files": [ "control.ts", "control.html", "control-settings.ts", "control-settings.html" ]
+                                         "files":[{"sourceName": "control.ts"},{"sourceName": "control.html"},{"sourceName": "control-settings.ts"},{"sourceName": "control-settings.html"}]
                                     },
                                     "destination": {
                                         "projectName": "ExtPkg",
@@ -148,7 +148,7 @@
                             "Description": "",
                             "source":{
                                 "folder": "samples/omnia-feature",
-                                "files": [ "CoreFeature.cs" ]
+                                "files": [ {"sourceName": "CoreFeature.cs"}]
                             },
                             "destination":{
                                 "projectName": "ExtPkg",
@@ -160,7 +160,7 @@
                             "description": "Provisioning pipeline for setting favorite icon in SharePoint",
                             "source":{
                                 "folder": "samples/favicon-provisioning-pipeline",
-                                "files": [ "FavIconProvisioningPipeline.cs" ]
+                                "files": [ { "sourceName": "FavIconProvisioningPipeline.cs"}]
                             },
                             "destination":{
                                 "projectName": "ExtPkg",
