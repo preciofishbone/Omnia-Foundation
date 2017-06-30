@@ -3,7 +3,7 @@
   "ApiSecret": "$foundationapisecret$",
   "FoundationUrl": "$foundationurl$",
   "Hosting": {
-    "Enabled": true,
+    "Enabled": false,
     "Port": 9900,
     "UseLiveReload": true
   },
