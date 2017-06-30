@@ -5,8 +5,8 @@
     <ProjectGuid>{EB51B841-DCAF-411A-985D-24F57FBD8F2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtPkgEmpty</RootNamespace>
-    <AssemblyName>ExtPkgEmpty</AssemblyName>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
