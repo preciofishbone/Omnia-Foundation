@@ -66,3 +66,4 @@
   <!--This needs to update when Typescipt nuget packages is updated-->
   <Import Project="..\packages\Microsoft.TypeScript.MSBuild.2.2.1\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.2.2.1\build\Microsoft.TypeScript.MSBuild.targets')" />
 
+$clientbuildtasks$
