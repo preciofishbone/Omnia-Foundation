@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "dependencies": {
     "gulp-less": "3.0.3",
-    "@omnia/tooling": "latest"
+    "@omnia/tooling": "$foundationapiversion$"
   }
 }
