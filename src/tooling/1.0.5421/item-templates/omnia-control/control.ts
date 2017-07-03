@@ -23,7 +23,7 @@ export interface IFileNameControlScope extends Control.IControlScope {
     imports: [OmniaExtensibilityCommonModule]
 })
 @Component({
-        selector: '<YourComponentSelectorHere>',
+    selector: '<YourComponentSelectorHere>',
     templateUrl: '$fileinputname$.html'
 })
 export class $fileinputname$Component extends OmniaControlBase implements OnInit {
