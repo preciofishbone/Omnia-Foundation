@@ -4,6 +4,7 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
+	"lib": [ "es2015", "dom" ],
     "declaration": false,
     "sourceMap": false,
     "removeComments": false,
