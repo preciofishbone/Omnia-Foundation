@@ -1,7 +1,3 @@
-// Not implemented
-// $viewId$
-// $tenantResourceId$
-
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
@@ -15,11 +11,11 @@ export interface IFileNameControlScope extends Control.IControlScope {
 }
 
 @OmniaControl({
-    id: '$tenantResourceId$',
+    id: '$guid1$',
     selector: '<YourComponentSelectorHere>',
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
-    templateId: "$viewId$",
+    templateId: "<tenant resource id for '$fileinputname$.html' here>",
     imports: [OmniaExtensibilityCommonModule]
 })
 @Component({
