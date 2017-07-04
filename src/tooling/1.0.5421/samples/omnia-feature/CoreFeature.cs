@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Omnia.Foundation.Extensibility.Core;
 using Microsoft.SharePoint.Client;
+using $safeprojectname$.ResourceMappings;
 
 namespace $safeprojectname$.Features
 {
@@ -50,7 +51,11 @@ namespace $safeprojectname$.Features
         /// <param name="resourceMapper">The resource mapper.</param>
         public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
         {
-           
+           resourceMapper
+            .AddOrUpdateTenantResourcesFrom<ResourceMappings.TenantResources>();
+
+            SetupPublicBundles(resourceMapper);
+            SetupAdminBundles(resourceMapper);
         }
 
         /// <summary>
@@ -59,18 +64,29 @@ namespace $safeprojectname$.Features
         /// <param name="artifactMapper">The artifacts mapper.</param>
         public override void OnSharePointArtifactMappings(SharePointArtifactMapper artifactMapper)
         {
-
+            
         }
 
         private void SetupPublicBundles(TenantResourcesMapper resourceMapper)
         {
+            // TODO: Change this to only bundle the resources needed in SharePoint
+            resourceMapper
+                .CreateBundleFor(BundleTargets.SharePoint)
+                .Include<ResourceMappings.TenantResources>();
             
-
+            resourceMapper
+                .SetBundlesSequence(500, BundleTargets.SharePoint);
         }
 
         private void SetupAdminBundles(TenantResourcesMapper resourceMapper)
         {
-            
+            // TODO: Change this to only bundle the resources needed in Omnia admin
+            resourceMapper
+                .CreateBundleFor(BundleTargets.OmniaAdmin)
+                .Include<ResourceMappings.TenantResources>();
+
+            resourceMapper
+                .SetBundlesSequence(500, BundleTargets.OmniaAdmin);
         }
     }
 }
