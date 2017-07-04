@@ -1,6 +1,6 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
+import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$-settings";
 
@@ -31,7 +31,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
         name: "Hellow World",
     };
 	
-    constructor( @Inject(ViewContainerRef) private viewContainer: ViewContainerRef, @Inject(ControlConfigService) private controlConfigService: ControlConfigService) {
+    constructor( @Inject(ViewContainerRef) public viewContainer: ViewContainerRef, @Inject(ControlConfigService) public controlConfigService: ControlConfigService) {
         super(viewContainer, controlConfigService);
     }
 
