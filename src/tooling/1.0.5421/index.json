@@ -19,11 +19,11 @@
                     },
                     {
                         "sourceName": "control-settings.ts",
-                        "targetName": "$fileinputname$-settings.ts"
+                        "targetName": "$fileinputname$Settings.ts"
                     },
                     {
                         "sourceName": "control-settings.html",
-                        "targetName": "$fileinputname$-settings.html"
+                        "targetName": "$fileinputname$Settings.html"
                     }
                 ]
             }            

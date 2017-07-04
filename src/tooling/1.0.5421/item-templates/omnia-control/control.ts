@@ -2,7 +2,7 @@ import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/c
 import { BrowserModule } from '@angular/platform-browser';
 import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
-import { $fileinputname$SettingsForm} from "./$fileinputname$-settings";
+import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
 
 export interface I$fileinputname$Scope extends Control.IControlScope {

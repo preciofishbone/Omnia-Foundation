@@ -14,10 +14,10 @@ export interface I$fileinputname$Settings extends Control.IControlConfig {
     }
 }
 
-@TemplateId("<tenant resource id for '$fileinputname$-settings.html' here>")
+@TemplateId("<tenant resource id for '$fileinputname$Settings.html' here>")
 @Component({
     selector: '<YourComponentSelectorHere>',
-    templateUrl:'$fileinputname$-settings.html'
+    templateUrl:'$fileinputname$Settings.html'
 })
 export class $fileinputname$SettingsForm extends BaseDialogComponent<BaseDialogModel<I$fileinputname$SettingsFormScope>> {
 
