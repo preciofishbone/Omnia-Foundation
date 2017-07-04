@@ -2,12 +2,13 @@ import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/c
 import { BrowserModule } from '@angular/platform-browser';
 import { BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
+import { $fileinputname$SettingsForm} from "./$fileinputname$-settings";
 
-export interface IFileNameControlScope extends Control.IControlScope {
-    welcomePageUrl?: string;
-    config?: any;
-    ableToEditSettings?: boolean;
-    isNotExternalUser?: boolean;
+
+export interface I$fileinputname$Scope extends Control.IControlScope {
+    config: any;
+    ableToEditSettings: boolean;
+	settingComponent:any;
 }
 
 @OmniaControl({
@@ -16,6 +17,8 @@ export interface IFileNameControlScope extends Control.IControlScope {
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
+	declarations: [$fileinputname$SettingsForm],
+    entryComponents: [$fileinputname$SettingsForm],
     imports: [OmniaExtensibilityCommonModule]
 })
 @Component({
@@ -23,7 +26,11 @@ export interface IFileNameControlScope extends Control.IControlScope {
     templateUrl: '$fileinputname$.html'
 })
 export class $fileinputname$Component extends OmniaControlBase implements OnInit {
-
+	public scope: I$fileinputname$Scope;
+	private defaultSettings = {
+        name: "Hellow World",
+    };
+	
     constructor( @Inject(ViewContainerRef) private viewContainer: ViewContainerRef, @Inject(ControlConfigService) private controlConfigService: ControlConfigService) {
         super(viewContainer, controlConfigService);
     }
@@ -33,13 +40,15 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 
     private init = () => {
+		this.controlConfigService.initControlConfigScope(this.scope, this.viewContainer.element.nativeElement,
+            "", "", this.defaultSettings, null, null, $fileinputname$SettingsForm);
     }
 }
 
 @NgModule({
     bootstrap: [BootstrapComponent],
-    declarations: [$fileinputname$Component],
-    entryComponents: [$fileinputname$Component],
+    declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
+    entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
     imports: [BrowserModule, OmniaExtensibilityCommonModule],
     exports: [$fileinputname$Component]
 })
