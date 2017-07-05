@@ -29,10 +29,26 @@
             }            
         },
          {   
+            "defaultName": "OmniaControlWebPart",  
+            "title": "Omnia Control Web Part", 
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Web Part definition containing an Omnia Control",
+            "source": {
+                "folder": "item-templates/omnia-control-webpart",
+                "files":[
+                    {
+                        "sourceName": "OmniaControlWebPart.webpart",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+         {   
             "defaultName": "Job",  
             "title": "Timer Job", 
             "category": "Server side",         
-            "icon": "structure",
+            "icon": "code",
             "description": "Template for creating a job that runs on a specific schedule",
             "source": {
                 "folder": "item-templates/job-timer",
@@ -48,7 +64,7 @@
             "defaultName": "Job",
             "title": "Queue Job",
             "category": "Server side",         
-            "icon": "structure",
+            "icon": "code",
             "description": "Template for creating a job that listens to a queue",
             "source": {
                 "folder": "item-templates/job-queue",
