@@ -1,1 +1,0 @@
-﻿// decalre your root ngmodule here for aot compile

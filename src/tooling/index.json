@@ -1,14 +1,8 @@
 [
     {
-        "versionNumber": "1.0.5420",
-        "requiredFoundationVersion": "1.0.5420",
-        "requiredVSToolingVersion": "1.0.5420",
-        "vsToolingDownloadUrl": "http://www.google.se"
-    },
-    {
-        "versionNumber": "1.0.5421",
-        "requiredFoundationVersion": "1.0.5421",
-        "requiredVSToolingVersion": "1.0.5421",
+        "versionNumber": "1.0.5862",
+        "requiredFoundationVersion": "1.0.5862",
+        "requiredVSToolingVersion": "1.0.5862",
         "vsToolingDownloadUrl": "http://www.google.se"
     }
 ]
