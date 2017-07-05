@@ -1,0 +1,15 @@
+﻿{
+  "title": "Template.Localization.Title",
+  "image": "", // Put tenant resource id for the image here
+  "baseTemplate": "BLANKINTERNETCONTAINER#0",
+  "description": "Template.Localization.Description",
+  "createAsSiteCollection": false,
+  "useCurrentSiteLocation": true,
+  "userCanChangeLanguage": true,
+  "lcid": 1033, 
+  "defaultTimeZone": 97,
+  "permissionLevel": 0, 
+  "featureDependency": [ ],
+  "siteFeatures": [ ],
+  "siteCollectionFeatures": [ ]  
+}

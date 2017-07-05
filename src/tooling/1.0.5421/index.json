@@ -99,6 +99,134 @@
                     }
                 ]
             }            
+        },
+        {   
+            "defaultName": "Field",
+            "title": "Field",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint Field Definition",
+            "source": {
+                "folder": "item-templates/field",
+                 "files":[
+                    {
+                        "sourceName": "Field.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "ContentType",
+            "title": "ContentType",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint ContentType Definition",
+            "source": {
+                "folder": "item-templates/contenttype",
+                 "files":[
+                    {
+                        "sourceName": "ContentType.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "List",
+            "title": "List",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint List Definition",
+            "source": {
+                "folder": "item-templates/list",
+                 "files":[
+                    {
+                        "sourceName": "List.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "SiteTemplate",
+            "title": "Site Template",
+            "category": "Server side",         
+            "icon": "structure",
+            "description": "Template for provisioning site collections and sub sites",
+            "source": {
+                "folder": "item-templates/site-template",
+                 "files":[
+                    {
+                        "sourceName": "sitetemplate.json",
+                        "targetName": "$fileinputname$.json"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "ResourceMapping",
+            "title": "Resource Mapping",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Tenant resources mapping file",
+            "source": {
+                "folder": "item-templates/resource-mapping",
+                 "files":[
+                    {
+                        "sourceName": "ResourceMapping.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Tenant)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Tenant",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-Tenant.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Site Collection)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Site Collection",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-SiteCollection.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Site)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Site",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-Site.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
         }
     ],
     "options": [
