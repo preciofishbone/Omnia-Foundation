@@ -39,7 +39,7 @@
                 "files":[
                     {
                         "sourceName": "OmniaControlWebPart.webpart",
-                        "targetName": "$fileinputname$.cs"
+                        "targetName": "$fileinputname$.webpart"
                     }
                 ]
             }            
