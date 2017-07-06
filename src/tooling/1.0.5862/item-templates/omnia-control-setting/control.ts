@@ -2,6 +2,7 @@ import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/c
 import { BrowserModule } from '@angular/platform-browser';
 import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
+import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
 
 export interface I$fileinputname$Scope extends Control.IControlScope {
@@ -16,6 +17,8 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
+	declarations: [$fileinputname$SettingsForm],
+    entryComponents: [$fileinputname$SettingsForm],
     imports: [OmniaExtensibilityCommonModule]
 })
 @Component({
@@ -38,14 +41,14 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
 
     private init = () => {
 		this.controlConfigService.initControlConfigScope(this.scope, this.viewContainer.element.nativeElement,
-            "", "", this.defaultSettings, null, null, null);
+            "", "", this.defaultSettings, null, null, $fileinputname$SettingsForm);
     }
 }
 
 @NgModule({
     bootstrap: [BootstrapComponent],
-    declarations: [$fileinputname$Component],
-    entryComponents: [$fileinputname$Component],
+    declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
+    entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
     imports: [BrowserModule, OmniaExtensibilityCommonModule],
     exports: [$fileinputname$Component]
 })
