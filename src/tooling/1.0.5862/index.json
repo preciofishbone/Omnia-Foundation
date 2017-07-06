@@ -5,9 +5,29 @@
             "title": "Omnia Control",
             "category": "Client side", 
             "icon": "code",
-            "description": "Template for Omnia control with settings form",
+            "description": "Template for Omnia control",
             "source": {
                 "folder": "item-templates/omnia-control",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaControl",  
+            "title": "Omnia Control With Settings",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Omnia control with settings form",
+            "source": {
+                "folder": "item-templates/omnia-control-setting",
                 "files":[
                     {
                         "sourceName": "control.ts",
