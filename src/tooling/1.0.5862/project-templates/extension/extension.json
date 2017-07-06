@@ -1,5 +1,5 @@
 ﻿{
-  "Id": "$guid1$",
+  "Id": "$extensionid$",
   "Version": "$extensionversion$",
   "Title": "$extensionname$",
   "Description": "",

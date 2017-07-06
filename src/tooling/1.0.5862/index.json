@@ -259,20 +259,7 @@
                                 "type": "client-task",
                                 "payload": "Angular"   
                             },
-                            "samples": [
-                                {
-                                    "title": "Hello World Control",
-                                    "description": "Simple Omnia control that display a text message from an Omnia setting",
-                                    "source": {
-                                        "folder": "samples/helloworld-control",
-                                         "files":[{"sourceName": "control.ts"},{"sourceName": "control.html"},{"sourceName": "control-settings.ts"},{"sourceName": "control-settings.html"}]
-                                    },
-                                    "destination": {
-                                        "projectName": "ExtPkg",
-                                        "folder": "TenantResources/Core/Components/HelloWorld"
-                                    }
-                                }
-                            ]
+                            "samples": []
                         },
                         { 
                             "title": "Less Tooling",
