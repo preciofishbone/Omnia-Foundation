@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Omnia.Foundation.Extensibility.TenantResources;
 using Omnia.Foundation.Models.Tenants;
 
-namespace $safeprojectname$.ProvisioningPipeline
+namespace $safeprojectname$.ProvisioningPipelines
 {
   
     [SharePointFileProvisioningPipelineDefinition(id: "$newGuid$")]

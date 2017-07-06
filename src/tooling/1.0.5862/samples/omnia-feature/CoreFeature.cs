@@ -20,7 +20,7 @@ namespace $safeprojectname$.Features
     public class CoreFeature : OmniaFeature
     {
         /// <summary>
-        /// Activates the AppFeature
+        /// Activates the Feature
         /// </summary>
         public override void Activate()
         {
@@ -28,7 +28,7 @@ namespace $safeprojectname$.Features
         }
 
         /// <summary>
-        /// Deactivates the AppFeature.
+        /// Deactivates the Feature.
         /// </summary>
         /// <param name="fromVersion">From version.</param>
         public override void Deactivate(string fromVersion)
@@ -37,7 +37,7 @@ namespace $safeprojectname$.Features
         }
 
         /// <summary>
-        /// Upgrades the AppFeature
+        /// Upgrades the Feature
         /// </summary>
         /// <param name="fromVersion">From version.</param>
         public override void Upgrade(string fromVersion)
@@ -46,7 +46,7 @@ namespace $safeprojectname$.Features
         }
 
         /// <summary>
-        /// Called when [appfeature resource mappings is being performed].
+        /// Called when [feature resource mappings is being performed].
         /// </summary>
         /// <param name="resourceMapper">The resource mapper.</param>
         public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
@@ -59,7 +59,7 @@ namespace $safeprojectname$.Features
         }
 
         /// <summary>
-        /// Called when [appfeature sharepoint artifacts mappings is being performed].
+        /// Called when [feature sharepoint artifacts mappings is being performed].
         /// </summary>
         /// <param name="artifactMapper">The artifacts mapper.</param>
         public override void OnSharePointArtifactMappings(SharePointArtifactMapper artifactMapper)
@@ -72,7 +72,7 @@ namespace $safeprojectname$.Features
             // TODO: Change this to only bundle the resources needed in SharePoint
             resourceMapper
                 .CreateBundleFor(BundleTargets.SharePoint)
-                .Include<ResourceMappings.TenantResources>();
+                .Include<CoreMappings.TenantResources>();
             
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.SharePoint);
@@ -83,7 +83,7 @@ namespace $safeprojectname$.Features
             // TODO: Change this to only bundle the resources needed in Omnia admin
             resourceMapper
                 .CreateBundleFor(BundleTargets.OmniaAdmin)
-                .Include<ResourceMappings.TenantResources>();
+                .Include<CoreMappings.TenantResources>();
 
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.OmniaAdmin);
