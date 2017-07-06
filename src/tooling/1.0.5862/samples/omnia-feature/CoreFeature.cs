@@ -52,7 +52,7 @@ namespace $safeprojectname$.Features
         public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
         {
            resourceMapper
-            .AddOrUpdateTenantResourcesFrom<ResourceMappings.TenantResources>();
+            .AddOrUpdateTenantResourcesFrom<CoreMappings.TenantResources>();
 
             SetupPublicBundles(resourceMapper);
             SetupAdminBundles(resourceMapper);
