@@ -1,14 +1,7 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
-import { Control } from "@omnia/foundation/models";
+import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, ControlConfigService} from "@omnia/foundation/extensibility";
 
-
-export interface I$fileinputname$Scope extends Control.IControlScope {
-    config: any;
-    ableToEditSettings: boolean;
-	settingComponent:any;
-}
 
 @OmniaControl({
     id: '$guid1$',
@@ -23,10 +16,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     templateUrl: '$fileinputname$.html'
 })
 export class $fileinputname$Component extends OmniaControlBase implements OnInit {
-	public scope: I$fileinputname$Scope;
-	private defaultSettings = {
-        name: "Hellow World",
-    };
+	public name: string;
 	
     constructor( @Inject(ViewContainerRef) public viewContainer: ViewContainerRef, @Inject(ControlConfigService) public controlConfigService: ControlConfigService) {
         super(viewContainer, controlConfigService);
@@ -37,8 +27,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 
     private init = () => {
-		this.controlConfigService.initControlConfigScope(this.scope, this.viewContainer.element.nativeElement,
-            "", "", this.defaultSettings, null, null, null);
+        this.name = "Hello World";
     }
 }
 
