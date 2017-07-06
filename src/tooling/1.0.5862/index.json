@@ -2,7 +2,7 @@
     "itemTemplates": [
         {      
             "defaultName": "OmniaControl",  
-            "title": "Omnia Control",
+            "title": "Omnia Control With Settings",
             "category": "Client side", 
             "icon": "code",
             "description": "Template for Omnia control with settings form",
