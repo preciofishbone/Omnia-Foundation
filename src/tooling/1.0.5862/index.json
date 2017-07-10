@@ -78,10 +78,10 @@
         },
         {      
             "defaultName": "OmniaAdminControl",  
-            "title": "Omnia Control For Notification Panel",
+            "title": "Admin Settings",
             "category": "Client side", 
             "icon": "code",
-            "description": "Template for Omnia control register to notification panel",
+            "description": "Template for Admin settings",
             "source": {
                 "folder": "item-templates/omnia-admin-control",
                 "files":[
