@@ -28,8 +28,7 @@
           "removeComments": false,
           "noImplicitAny": false,
           "emitDecoratorMetadata": true,
-          "experimentalDecorators": true,
-          "types": []
+          "experimentalDecorators": true
         },
         "angularCompilerOptions": {
           "genDir": ".",

@@ -76,6 +76,34 @@
                 ]
             }            
         },
+        {      
+            "defaultName": "OmniaAdminControl",  
+            "title": "Omnia Control For Notification Panel",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Omnia control register to notification panel",
+            "source": {
+                "folder": "item-templates/omnia-admin-control",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    },
+                    {
+                        "sourceName": "permission.ts",
+                        "targetName": "$fileinputname$Permission.ts"
+                    },
+                    {
+                        "sourceName": "permission.html",
+                        "targetName": "$fileinputname$Permission.html"
+                    }
+                ]
+            }            
+        },
          {   
             "defaultName": "OmniaControlWebPart",  
             "title": "Omnia Control Web Part", 
