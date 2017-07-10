@@ -12,7 +12,7 @@ import { OmniaAdminControl, OmniaExtensibilityAdminModule, LocalizePrefix, Navig
         authorizedRoles: [
             {
                 name: '$fileinputname$.Admin',
-                scope: PermissionScopes.tenant
+                scope: PermissionScopes.Tenant
             }
         ],
         children: [],

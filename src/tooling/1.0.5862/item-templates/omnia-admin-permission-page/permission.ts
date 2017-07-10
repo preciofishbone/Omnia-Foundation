@@ -1,7 +1,7 @@
 import { Inject} from '@angular/core';
 import { Security } from "@omnia/foundation/models";
 import {
-    OmniaAdminPermissionBase, OmniaExtensibilityAdminModule,
+    OmniaAdminPermissionBase, OmniaExtensibilityAdminModule, OmniaAdminControl,
     LocalizePrefix, Enums, PermissionScopes, PermissionRoles, TemplateId, AdminAuthorizationService
 } from '@omnia/foundation/extensibility';
 

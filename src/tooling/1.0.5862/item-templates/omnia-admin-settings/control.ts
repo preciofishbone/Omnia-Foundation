@@ -1,5 +1,5 @@
 import { Inject, OnInit, ViewContainerRef } from '@angular/core';
-import { OmniaAdminControl, OmniaExtensibilityAdminModule, LocalizePrefix, NavigationScope, PermissionScopes, LocalizationService, LocalizePrefix } from '@omnia/foundation/extensibility';
+import { OmniaAdminControl, OmniaExtensibilityAdminModule, NavigationScope, PermissionScopes, LocalizationService, LocalizePrefix } from '@omnia/foundation/extensibility';
 
 @OmniaAdminControl({
     selector: '<YourComponentSelectorHere>',
@@ -14,14 +14,14 @@ import { OmniaAdminControl, OmniaExtensibilityAdminModule, LocalizePrefix, Navig
         authorizedRoles: [
             {
                 name: '$fileinputname$Settings.Admin',
-                scope: PermissionScopes.tenant
+                scope: PermissionScopes.Tenant
             }
         ],
         children: ['$fileinputname$permissionstate']
     },
     templateId:"", // TODO: Put the tenant resource id of '$fileinputname$.html' here
 })
-export class  $fileinputname$Settings implements OnInit {
+export class  $fileinputname$ implements OnInit {
     constructor( @Inject(ViewContainerRef) private viewContainer: ViewContainerRef) {
         this.init();
     }

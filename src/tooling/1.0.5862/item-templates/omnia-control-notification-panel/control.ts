@@ -6,11 +6,11 @@ import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
 
-export interface I$fileinputname$Scope extends Control.IControlScope {
+export interface I$fileinputname$Scope extends Control.IControlWithViewedHistoryScope {
     config?: any;
     ableToEditSettings?: boolean;
 	settingComponent?:any;
-    items?:Array<{id:number, title:string, isNew?:boolean}>;
+    items?:Array<{id:string, title:string, isNew?:boolean}>;
 }
 
 @OmniaControl({
@@ -33,7 +33,6 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     public static controlId = '$guid1$';
 	public scope: I$fileinputname$Scope;
 	private defaultSettings = {
-        name: "Hellow World",
     };
 	
     constructor( 
@@ -48,8 +47,6 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 
     private init = () => {
-        this.scope = {};
-
 		this.controlConfigService.initControlConfigScope(this.scope, this.viewContainer.element.nativeElement,
             "", "", this.defaultSettings, this.canEditSettings, this.onSettingsChangedHandler, $fileinputname$SettingsForm);
 
@@ -58,7 +55,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 
     private loadData = () =>{
-        this.scope.items = [{id:1, title:'test', isNew:true}];
+        this.scope.items = [{id:'1', title:'test', isNew:true}];
         this.publishNewDataCountToNotificationPanel();
     }
 
