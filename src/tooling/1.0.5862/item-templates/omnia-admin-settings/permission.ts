@@ -1,4 +1,4 @@
-import { Inject, AfterViewInit, OnInit, OnChanges } from '@angular/core';
+import { Inject} from '@angular/core';
 import { Security } from "@omnia/foundation/models";
 import {
     OmniaAdminPermissionBase, OmniaExtensibilityAdminModule,

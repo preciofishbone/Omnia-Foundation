@@ -83,7 +83,7 @@
             "icon": "code",
             "description": "Template for Admin settings",
             "source": {
-                "folder": "item-templates/omnia-admin-control",
+                "folder": "item-templates/omnia-admin-settings",
                 "files":[
                     {
                         "sourceName": "control.ts",
@@ -100,6 +100,46 @@
                     {
                         "sourceName": "permission.html",
                         "targetName": "$fileinputname$Permission.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaAdminPermissionsPage",  
+            "title": "Admin Settings Permissions Page",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Admin settings permission page",
+            "source": {
+                "folder": "item-templates/omnia-admin-permission-page",
+                "files":[
+                    {
+                        "sourceName": "permission.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "permission.html",
+                        "targetName": "$fileinputname$.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaAdminSettingsPage",  
+            "title": "Admin Settings Page",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Admin settings page",
+            "source": {
+                "folder": "item-templates/omnia-admin-settings-page",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
                     }
                 ]
             }            

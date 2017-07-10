@@ -1,11 +1,12 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, ControlConfigService} from "@omnia/foundation/extensibility";
+import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 
 
 @OmniaControl({
     id: '$guid1$',
     selector: '<YourComponentSelectorHere>',
+    providers: [LocalizationService, LocalizePrefix("")],
     showInPageDesigner: false,
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',

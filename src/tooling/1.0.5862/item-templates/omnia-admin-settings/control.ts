@@ -1,7 +1,9 @@
-import { OmniaAdminControl, OmniaExtensibilityAdminModule, LocalizePrefix, NavigationScope, PermissionScopes, LocalizationService } from '@omnia/foundation/extensibility';
+import { Inject, OnInit, ViewContainerRef } from '@angular/core';
+import { OmniaAdminControl, OmniaExtensibilityAdminModule, LocalizePrefix, NavigationScope, PermissionScopes, LocalizationService, LocalizePrefix } from '@omnia/foundation/extensibility';
 
 @OmniaAdminControl({
     selector: '<YourComponentSelectorHere>',
+    providers: [LocalizationService, LocalizePrefix("")],
     imports: [OmniaExtensibilityAdminModule],
     navigation: {
         scope: NavigationScope.tenant,      

@@ -1,6 +1,6 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService} from "@omnia/foundation/extensibility";
+import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
@@ -14,6 +14,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
 @OmniaControl({
     id: '$guid1$',
     selector: '<YourComponentSelectorHere>',
+    providers: [LocalizationService, LocalizePrefix("")],
     showInPageDesigner: false,
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
