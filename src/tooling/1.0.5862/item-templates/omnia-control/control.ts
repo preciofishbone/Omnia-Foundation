@@ -6,6 +6,7 @@ import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityC
 @OmniaControl({
     id: '$guid1$',
     selector: '<YourComponentSelectorHere>',
+    showInPageDesigner: false,
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
