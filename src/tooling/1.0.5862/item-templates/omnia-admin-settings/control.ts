@@ -1,5 +1,5 @@
 import { Inject, OnInit, ViewContainerRef } from '@angular/core';
-import { OmniaAdminControl, OmniaExtensibilityAdminModule, NavigationScope, PermissionScopes, AdminAuthorizationService, LocalizationService, LocalizePrefix } from '@omnia/foundation/extensibility';
+import { OmniaAdminControl, OmniaExtensibilityAdminModule, OmniaAdminPermissionBase, NavigationScope, PermissionScopes, AdminAuthorizationService, LocalizationService, LocalizePrefix } from '@omnia/foundation/extensibility';
 
 let authorizedRoles = [
     {
