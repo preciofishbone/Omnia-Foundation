@@ -1,6 +1,6 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
+import {Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
@@ -47,7 +47,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 
     private canEditSettings = (): boolean => {
-        return _omniaContextInfo.userPermissions.hasFullPagePermission;
+        return Core.getContextInfo().userPermissions.hasFullPagePermission;
     }
 
     private onSettingsChangedHandler = () => {
