@@ -23,7 +23,7 @@ let authorizedRoles = [
     },
     templateId:"", // TODO: Put the tenant resource id of '$fileinputname$.html' here
 })
-export class  $fileinputname$ extends OmniaAdminPermissionBase implements OnInit {
+export class  $fileinputname$Settings extends OmniaAdminPermissionBase implements OnInit {
     constructor( 
         @Inject(ViewContainerRef) private viewContainer: ViewContainerRef,
         @Inject(AdminAuthorizationService) public authorizationService: AdminAuthorizationService) {
