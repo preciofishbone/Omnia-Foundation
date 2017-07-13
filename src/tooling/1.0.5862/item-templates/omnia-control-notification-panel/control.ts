@@ -1,6 +1,6 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, 
+import { Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, 
     Utils, NotificationPanel, ControlConfigService, StatisticService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
