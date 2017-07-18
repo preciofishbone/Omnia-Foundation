@@ -1,6 +1,7 @@
 {
   "name": "omnia",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "omf-before-build": "gulp omf-before-build",
     "omf-after-build": "gulp omf-after-build"
