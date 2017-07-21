@@ -13,6 +13,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
+  "files": [ "TaskRunner/Tasks/Angular/omf.aot.modules.ts" ],
+  "include": [
+    "**/*"
+  ],
   "exclude": [
     "node_modules",
     "TaskRunner"
