@@ -23,7 +23,7 @@ export interface I$fileinputname$Scope extends Control.IControlWithViewedHistory
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
 	declarations: [$fileinputname$SettingsForm],
     entryComponents: [$fileinputname$SettingsForm],
-    imports: [OmniaExtensibilityCommonModule]
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule]
 })
 @Component({
     selector: '<YourComponentSelectorHere>',
@@ -93,7 +93,7 @@ NotificationPanel.registerNotificationPanelControl($fileinputname$Component.cont
     bootstrap: [BootstrapComponent],
     declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
     entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule],
+    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }

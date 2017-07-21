@@ -21,7 +21,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
 	declarations: [$fileinputname$SettingsForm],
     entryComponents: [$fileinputname$SettingsForm],
-    imports: [OmniaExtensibilityCommonModule]
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule]
 })
 @Component({
     selector: '<YourComponentSelectorHere>',
@@ -59,7 +59,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     bootstrap: [BootstrapComponent],
     declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
     entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule],
+    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }
