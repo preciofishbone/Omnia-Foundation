@@ -7,6 +7,10 @@
       ],
       "ignoreFiles": [],
       "flatModules": [],
+	  "bundleLibs": {
+        "configFile": "",
+        "outputFile": ""
+      },
       "watch": [ "TenantResources/**/*.js" ]
     },
     "aot": {
