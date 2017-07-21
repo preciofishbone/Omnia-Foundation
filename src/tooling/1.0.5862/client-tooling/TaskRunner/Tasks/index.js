@@ -1,7 +1,7 @@
-﻿var glob = require('glob')
+﻿var glob = require('../../node_modules/glob')
 processPath = process.cwd().replace(/\\/g, "/");
 
-require('@omnia/tooling');
+require('../../node_modules/@omnia/tooling/index');
 
 loadTasks();
 

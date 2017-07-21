@@ -1,1 +1,1 @@
-﻿require('@omnia/foundation/task/index.js');
+﻿require('../../../node_modules/@omnia/foundation/task/index.js');

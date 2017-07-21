@@ -1,11 +1,9 @@
-﻿var gulp = require('gulp')
-    , glob = require('glob')
-    , chokidar = require('chokidar')
-    , fs = require('fs')
-    , less = require('gulp-less')
-    , timestamp = require('console-timestamp')
-    , path = require('path')
-    , omt = require('@omnia/tooling');
+﻿var gulp = require('../../../node_modules/gulp')
+    , glob = require('../../../node_modules/glob')
+    , chokidar = require('../../../node_modules/chokidar')
+    , less = require('../../../node_modules/gulp-less')
+    , timestamp = require('../../../node_modules/console-timestamp')
+    , omt = require('../../../node_modules/@omnia/tooling');
 
 var appConfig = require('./task.config.json');
 
@@ -43,6 +41,11 @@ function compileLess() {
                 countLoop++;
                 totalFiles = totalFiles + files.length;
 
+                if (appConfig.less.compile.tenantResource.files.length === countLoop && totalFiles === 0) {
+                    console.log(timestamp('[hh:mm:ss]') + ' Compile less finished');
+                    resolve();
+                }
+
                 for (var k = 0; k < files.length; k++) {
                     compile(files[k], function () {
                         totalFiles = totalFiles - 1;
@@ -54,7 +57,7 @@ function compileLess() {
                 }
             });
         }
-        if (appConfig.less.compile.tenantResource.files.length.length === 0) {
+        if (appConfig.less.compile.tenantResource.files.length === 0) {
             console.log(timestamp('[hh:mm:ss]') + ' Compile less finished');
             resolve();
         }
@@ -74,5 +77,3 @@ function compileLess() {
             });
     }
 }
-
-
