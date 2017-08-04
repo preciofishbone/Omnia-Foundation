@@ -13,7 +13,7 @@ let authorizedRoles = [
     providers: [LocalizationService, LocalizePrefix("")],
     imports: [OmniaExtensibilityAdminModule],
     navigation: {
-        scope: NavigationScope.tenant,      
+        scope: NavigationScope.Tenant,      
         title: "", // TODO: Put the localization of your settings page display name here
         state: "$fileinputname$state",
         url: "$fileinputname$",
