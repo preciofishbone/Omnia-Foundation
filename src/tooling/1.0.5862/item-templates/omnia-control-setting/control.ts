@@ -14,8 +14,11 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
 @OmniaControl({
     id: '$guid1$',
     selector: '<YourComponentSelectorHere>',
+    title: '$fileinputname$',
+    icon: 'fa-cube',
+    group: 'Custom',
+    showInPageDesigner: true,
     providers: [LocalizationService, LocalizePrefix("")],
-    showInPageDesigner: false,
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
