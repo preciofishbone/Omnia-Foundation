@@ -7,7 +7,6 @@ import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
 
 export interface I$fileinputname$Scope extends Control.IControlScope {
     config?: any;
-    ableToEditSettings?: boolean;
 	settingComponent?:any;
 }
 
@@ -18,6 +17,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     icon: 'fa-cube',
     group: 'Custom',
     showInPageDesigner: true,
+    enableSettings: true,
     providers: [LocalizationService, LocalizePrefix("")],
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
