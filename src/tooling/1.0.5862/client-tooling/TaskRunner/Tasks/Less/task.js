@@ -1,9 +1,11 @@
-﻿var gulp = require('../../../node_modules/gulp')
-    , glob = require('../../../node_modules/glob')
-    , chokidar = require('../../../node_modules/chokidar')
-    , less = require('../../../node_modules/gulp-less')
-    , timestamp = require('../../../node_modules/console-timestamp')
-    , omt = require('../../../node_modules/@omnia/tooling');
+﻿var gulp = require('gulp')
+    , glob = require('glob')
+    , chokidar = require('chokidar')
+    , fs = require('fs')
+    , less = require('gulp-less')
+    , timestamp = require('console-timestamp')
+    , path = require('path')
+    , omt = require('@omnia/tooling');
 
 var appConfig = require('./task.config.json');
 
@@ -22,9 +24,10 @@ gulp.task('omf-watch-less', function () {
     watchLessTenantResource.on('ready', function () {
         watchLessTenantResource
             .on('change', function (path) {
-                console.log(utils.getCurrentDateTime() + " : compiling > " + path);
-                compileAllLess();
-                console.log(utils.getCurrentDateTime() + " : done");
+                console.log(timestamp('[hh:mm:ss]') + " Compiling less > " + path);
+                compile(path, function () {
+                    console.log(timestamp('[hh:mm:ss]') + " done");
+                });
             });
     });
 });
@@ -41,11 +44,6 @@ function compileLess() {
                 countLoop++;
                 totalFiles = totalFiles + files.length;
 
-                if (appConfig.less.compile.tenantResource.files.length === countLoop && totalFiles === 0) {
-                    console.log(timestamp('[hh:mm:ss]') + ' Compile less finished');
-                    resolve();
-                }
-
                 for (var k = 0; k < files.length; k++) {
                     compile(files[k], function () {
                         totalFiles = totalFiles - 1;
@@ -55,25 +53,30 @@ function compileLess() {
                         }
                     });
                 }
+                if (appConfig.less.compile.tenantResource.files === countLoop && totalFiles === 0) {
+                    console.log(timestamp('[hh:mm:ss]') + ' Compile less finished');
+                    resolve();
+                }
             });
         }
-        if (appConfig.less.compile.tenantResource.files.length === 0) {
+        if (appConfig.less.compile.tenantResource.files.length.length === 0) {
             console.log(timestamp('[hh:mm:ss]') + ' Compile less finished');
             resolve();
         }
     });
-
-    function compile(filePath, callBack) {
-        var filePathFOrmatOS = filePath.replace(/\//g, "\\");
-
-        gulp.src(filePath)
-            //.pipe($.sourcemaps.init())
-            .pipe(less({}))
-            //.pipe($.sourcemaps.write('.'))
-            .pipe(gulp.dest(filePath.substring(0, filePath.lastIndexOf('/'))))
-            .on('end', function () {
-                if (callBack !== undefined)
-                    callBack();
-            });
-    }
 }
+
+function compile(filePath, callBack) {
+    var filePathFOrmatOS = filePath.replace(/\\/g, "/");
+    gulp.src(filePathFOrmatOS)
+        //.pipe($.sourcemaps.init())
+        .pipe(less({}))
+        //.pipe($.sourcemaps.write('.'))
+        .pipe(gulp.dest(filePathFOrmatOS.substring(0, filePathFOrmatOS.lastIndexOf('/'))))
+        .on('end', function () {
+            if (callBack !== undefined)
+                callBack();
+        });
+}
+
+
