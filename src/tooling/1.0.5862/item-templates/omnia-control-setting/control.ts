@@ -31,7 +31,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     templateUrl: '$fileinputname$.html'
 })
 export class $fileinputname$Component extends OmniaControlBase implements OnInit {
-	public scope: I$fileinputname$Scope;
+	public scope: I$fileinputname$Scope = {};
 	private defaultSettings = {
         name: "Hellow World",
     };
