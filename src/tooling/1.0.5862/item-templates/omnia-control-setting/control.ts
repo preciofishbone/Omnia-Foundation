@@ -2,7 +2,7 @@ import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/c
 import { BrowserModule } from '@angular/platform-browser';
 import { Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
-import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
+import { $fileinputname$SettingsForm, $fileinputname$SettingsFormModule} from "./$fileinputname$Settings";
 
 
 export interface I$fileinputname$Scope extends Control.IControlScope {
@@ -22,9 +22,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
     enableAot: true,
     modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
     templateId: "<tenant resource id for '$fileinputname$.html' here>",
-	declarations: [$fileinputname$SettingsForm],
-    entryComponents: [$fileinputname$SettingsForm],
-    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule]
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, $fileinputname$SettingsFormModule]
 })
 @Component({
     selector: '<YourComponentSelectorHere>',
@@ -46,7 +44,7 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
 
     private init = () => {
 		this.controlConfigService.initControlConfigScope(this.scope, this.viewContainer.element.nativeElement,
-            "", "", this.defaultSettings, this.canEditSettings, this.onSettingsChangedHandler, $fileinputname$SettingsForm);
+            "", "", this.defaultSettings, this.canEditSettings, this.onSettingsChangedHandler, $fileinputname$SettingsForm, $fileinputname$SettingsFormModule);
     }
 
     private canEditSettings = (): boolean => {

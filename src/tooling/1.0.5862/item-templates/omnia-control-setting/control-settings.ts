@@ -38,3 +38,9 @@ export class $fileinputname$SettingsForm extends BaseDialogComponent<BaseDialogM
         });
     }
 }
+@NgModule({
+    declarations: [$fileinputname$SettingsForm],
+    entryComponents: [$fileinputname$SettingsForm],
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule]
+})
+export class $fileinputname$SettingsFormModule { }
