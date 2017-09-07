@@ -58,9 +58,9 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
 
 @NgModule({
     bootstrap: [BootstrapComponent],
-    declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
-    entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule],
+    declarations: [$fileinputname$Component],
+    entryComponents: [$fileinputname$Component],
+    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, $fileinputname$SettingsFormModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }
