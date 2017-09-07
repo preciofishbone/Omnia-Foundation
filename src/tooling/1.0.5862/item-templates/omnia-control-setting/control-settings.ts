@@ -1,7 +1,7 @@
-import { Component, Inject, ViewContainerRef} from '@angular/core';
+import { Component, Inject, ViewContainerRef, NgModule} from '@angular/core';
 import { DialogRef} from 'angular2-modal';
 import { Control } from "@omnia/foundation/models";
-import {TemplateId, ControlConfigService, BaseDialogComponent, BaseDialogModel } from "@omnia/foundation/extensibility";
+import { OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, TemplateId, ControlConfigService, BaseDialogComponent, BaseDialogModel } from "@omnia/foundation/extensibility";
 
 export interface I$fileinputname$SettingsFormScope {
     config?: I$fileinputname$Settings;
