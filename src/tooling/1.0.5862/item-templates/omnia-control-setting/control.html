@@ -1,6 +1,10 @@
 <div class="omf-content">
 	<span>Hello World from $fileinputname$</span>
 	<omf-control-settings-editor *ngIf="scope.canEditSettings"
-                               [containerId]="scope.containerId" [config]="scope.config" [settingsDialogComponent]="scope.settingComponent" [settingsDialogModule]="scope.settingModule" >
+                               [containerId]="scope.containerId" 
+							   [config]="scope.config" 
+							   [settingsDialogComponent]="scope.settingComponent" 
+							   [settingsDialogModule]="scope.settingModule"
+							   [onSettingsChanged]="onSettingsChangedHandler">
 	</omf-control-settings-editor>
 </div>
