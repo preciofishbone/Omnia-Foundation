@@ -4,6 +4,7 @@
   "Title": "$extensionname$",
   "Description": "",
   "TenantResourceFolders": [ "TenantResources" ],
+  "AppSettings": {},
   "ScriptSettings": {
     "OmitModulePath": "/TenantResources"
   }
