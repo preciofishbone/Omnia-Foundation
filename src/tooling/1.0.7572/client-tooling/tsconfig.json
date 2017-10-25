@@ -1,0 +1,25 @@
+﻿{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [ "es2015", "dom" ],
+    "skipLibCheck": true,
+    "declaration": false,
+    "sourceMap": false,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [ "TaskRunner/Tasks/Angular/omf.aot.modules.ts" ],
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+	"bin",
+    "TaskRunner"
+  ]
+}

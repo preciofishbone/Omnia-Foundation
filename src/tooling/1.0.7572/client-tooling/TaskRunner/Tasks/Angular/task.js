@@ -1,0 +1,1 @@
+﻿require('../../../node_modules/@omnia/foundation/task/index.js');

@@ -1,0 +1,11 @@
+﻿{
+  "Id": "$extensionid$",
+  "Version": "$extensionversion$",
+  "Title": "$extensionname$",
+  "Description": "",
+  "TenantResourceFolders": [ "TenantResources" ],
+  "AppSettings": {},
+  "ScriptSettings": {
+    "OmitModulePath": "/TenantResources"
+  }
+}

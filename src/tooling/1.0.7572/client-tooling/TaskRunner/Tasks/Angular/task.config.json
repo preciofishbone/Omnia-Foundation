@@ -1,0 +1,45 @@
+﻿{
+  "angular": {
+    "webpack": {
+      "basePaths": [ "TenantResources" ],
+      "compileFiles": [
+        "TenantResources/**/*.js"
+      ],
+      "ignoreFiles": [],
+      "flatModules": [],
+	  "bundleLibs": {
+        "configFile": "",
+        "outputFile": ""
+      },
+      "watch": [ "TenantResources/**/*.js" ]
+    },
+    "aot": {
+      "compileAotTsFiles": [
+        "TenantResources/**/*.ngfactory.ts"
+      ],
+      "cleanBefore": [
+        "TenantResources/**/*.ngfactory.ts"
+      ],
+      "cleanAfter": [ 
+        "TenantResources/**/*.ngsummary.json", 
+        "TenantResources/**/*.metadata.json" 
+      ],
+      "typesForCompileAotTsFiles": [
+        "node_modules/@omnia/foundation/task/typings/omf.aot.d.ts"
+      ],
+      "ngc": {
+        "files": [
+          "node_modules/@omnia/foundation/task/typings/omf.aot.d.ts",
+          "TaskRunner/Tasks/Angular/omf.aot.modules.ts"
+        ],
+        "exclude": [
+          "node_modules",
+          "TaskRunner",
+          "TenantResources/**/*.ngsummary.ts",
+          "TenantResources/**/*.ngfactory.ts"
+        ]
+      }
+    }
+  }
+
+}

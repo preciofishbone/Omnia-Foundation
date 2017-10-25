@@ -1,0 +1,439 @@
+{
+    "itemTemplates": [
+        {      
+            "defaultName": "OmniaControl",  
+            "title": "Omnia Control",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Omnia control",
+            "source": {
+                "folder": "item-templates/omnia-control",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaControl",  
+            "title": "Omnia Control With Settings",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Omnia control with settings form",
+            "source": {
+                "folder": "item-templates/omnia-control-setting",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    },
+                    {
+                        "sourceName": "control-settings.ts",
+                        "targetName": "$fileinputname$Settings.ts"
+                    },
+                    {
+                        "sourceName": "control-settings.html",
+                        "targetName": "$fileinputname$Settings.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaControl",  
+            "title": "Omnia Control For Notification Panel",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Omnia control register to notification panel",
+            "source": {
+                "folder": "item-templates/omnia-control-notification-panel",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    },
+                    {
+                        "sourceName": "control-settings.ts",
+                        "targetName": "$fileinputname$Settings.ts"
+                    },
+                    {
+                        "sourceName": "control-settings.html",
+                        "targetName": "$fileinputname$Settings.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaAdminControl",  
+            "title": "Admin Settings",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Admin settings",
+            "source": {
+                "folder": "item-templates/omnia-admin-settings",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    },
+                    {
+                        "sourceName": "permission.ts",
+                        "targetName": "$fileinputname$Permission.ts"
+                    },
+                    {
+                        "sourceName": "permission.html",
+                        "targetName": "$fileinputname$Permission.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaAdminPermissionsPage",  
+            "title": "Admin Settings Permissions Page",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Admin settings permission page",
+            "source": {
+                "folder": "item-templates/omnia-admin-permission-page",
+                "files":[
+                    {
+                        "sourceName": "permission.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "permission.html",
+                        "targetName": "$fileinputname$.html"
+                    }
+                ]
+            }            
+        },
+        {      
+            "defaultName": "OmniaAdminSettingsPage",  
+            "title": "Admin Settings Page",
+            "category": "Client side", 
+            "icon": "code",
+            "description": "Template for Admin settings page",
+            "source": {
+                "folder": "item-templates/omnia-admin-settings-page",
+                "files":[
+                    {
+                        "sourceName": "control.ts",
+                        "targetName": "$fileinputname$.ts"
+                    },
+                    {
+                        "sourceName": "control.html",
+                        "targetName": "$fileinputname$.html"
+                    }
+                ]
+            }            
+        },
+         {   
+            "defaultName": "OmniaControlWebPart",  
+            "title": "Omnia Control Web Part", 
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Web Part definition containing an Omnia Control",
+            "source": {
+                "folder": "item-templates/omnia-control-webpart",
+                "files":[
+                    {
+                        "sourceName": "OmniaControlWebPart.webpart",
+                        "targetName": "$fileinputname$.webpart"
+                    }
+                ]
+            }            
+        },
+         {   
+            "defaultName": "Job",  
+            "title": "Timer Job", 
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Template for creating a job that runs on a specific schedule",
+            "source": {
+                "folder": "item-templates/job-timer",
+                "files":[
+                    {
+                        "sourceName": "Job.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Job",
+            "title": "Queue Job",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Template for creating a job that listens to a queue",
+            "source": {
+                "folder": "item-templates/job-queue",
+                 "files":[
+                    {
+                        "sourceName": "Job.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+         {  
+            "defaultName": "PublicLocalization", 
+            "title": "Public Localization",
+            "category": "Localization",         
+            "icon": "localize",
+            "description": "A localization file for use in the public UX",
+            "source": {
+                "folder": "item-templates/localization-public",
+                 "files":[
+                    {
+                        "sourceName": "public.loc.json",
+                        "targetName": "$fileinputname$.loc.json"
+                    },
+                    {
+                        "sourceName": "public.loc.sv-se.json",
+                        "targetName": "$fileinputname$.loc.sv-se.json"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "AdminLocalization",
+            "title": "Admin Localization",
+            "category": "Localization",         
+            "icon": "localize",
+            "description": "A localization file for Omnia Admin UX",
+            "source": {
+                "folder": "item-templates/localization-admin",
+                 "files":[
+                    {
+                        "sourceName": "admin.loc.json",
+                        "targetName": "$fileinputname$.loc.json"
+                    },
+                    {
+                        "sourceName": "admin.loc.sv-se.json",
+                        "targetName": "$fileinputname$.loc.sv-se.json"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Field",
+            "title": "Field",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint Field Definition",
+            "source": {
+                "folder": "item-templates/field",
+                 "files":[
+                    {
+                        "sourceName": "Field.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "ContentType",
+            "title": "ContentType",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint ContentType Definition",
+            "source": {
+                "folder": "item-templates/contenttype",
+                 "files":[
+                    {
+                        "sourceName": "ContentType.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "List",
+            "title": "List",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "SharePoint List Definition",
+            "source": {
+                "folder": "item-templates/list",
+                 "files":[
+                    {
+                        "sourceName": "List.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "SiteTemplate",
+            "title": "Site Template",
+            "category": "Server side",         
+            "icon": "structure",
+            "description": "Template for provisioning site collections and sub sites",
+            "source": {
+                "folder": "item-templates/site-template",
+                 "files":[
+                    {
+                        "sourceName": "sitetemplate.json",
+                        "targetName": "$fileinputname$.json"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "ResourceMapping",
+            "title": "Resource Mapping",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Tenant resources mapping file",
+            "source": {
+                "folder": "item-templates/resource-mapping",
+                 "files":[
+                    {
+                        "sourceName": "ResourceMapping.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Tenant)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Tenant",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-Tenant.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Site Collection)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Site Collection",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-SiteCollection.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        },
+        {   
+            "defaultName": "Feature",
+            "title": "Feature (Site)",
+            "category": "Server side",         
+            "icon": "code",
+            "description": "Omnia Feature targeting Site",
+            "source": {
+                "folder": "item-templates/feature",
+                 "files":[
+                    {
+                        "sourceName": "Feature-Site.cs",
+                        "targetName": "$fileinputname$.cs"
+                    }
+                ]
+            }            
+        }
+    ],
+    "options": [
+        {
+            "title": "Extension Package",
+            "options": [
+                {
+                    "title": "Client Side",
+                    "options": [
+                        { 
+                            "title": "Angular Tooling",
+                            "requiredForChildren": true,
+                            "action": {
+                                "type": "client-task",
+                                "payload": "Angular"   
+                            },
+                            "samples": []
+                        },
+                        { 
+                            "title": "Less Tooling",
+                            "requiredForChildren": true,
+                            "action": {
+                                "type": "client-task",
+                                "payload": "Less"   
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Server Side",
+                    "samples": [
+                        {
+                            "title": "Omnia Feature",
+                            "Description": "",
+                            "source":{
+                                "folder": "samples/omnia-feature",
+                                "files": [ {"sourceName": "CoreFeature.cs"}]
+                            },
+                            "destination":{
+                                "projectName": "ExtPkg",
+                                "folder": "Features"
+                            }
+                        },
+                        {
+                            "title": "Favorite Icon Provisioning Pipeline",
+                            "description": "Provisioning pipeline for setting favorite icon in SharePoint",
+                            "source":{
+                                "folder": "samples/favicon-provisioning-pipeline",
+                                "files": [ { "sourceName": "FavIconProvisioningPipeline.cs"}]
+                            },
+                            "destination":{
+                                "projectName": "ExtPkg",
+                                "folder": "ProvisioningPipelines"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Setup basic folder structure",
+                    "requiredForChildren": true,
+                    "action": {
+                            "type": "add-folders",
+                            "payload": "Add"   
+                            },
+                    "samples": []
+                }
+            ]
+        },    
+        {
+            "title": "Web API",
+            "action": {
+                "type": "add-webapi",
+                "payload": "Add"   
+            }           
+        }    
+       
+    ]   
+}
