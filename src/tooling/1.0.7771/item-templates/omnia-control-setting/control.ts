@@ -1,6 +1,5 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
+import { TemplateId, Core, OmniaControl, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm, $fileinputname$SettingsFormModule} from "./$fileinputname$Settings";
 
@@ -10,20 +9,7 @@ export interface I$fileinputname$Scope extends Control.IControlScope {
 	settingComponent?:any;
 }
 
-@OmniaControl({
-    id: '$guid1$',
-    selector: '<YourComponentSelectorHere>',
-    title: '$fileinputname$',
-    icon: 'fa-cube',
-    group: 'Custom',
-    showInPageDesigner: true,
-    enableSettings: true,
-    providers: [LocalizationService, LocalizePrefix("")],
-    enableAot: true,
-    modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
-    templateId: "<tenant resource id for '$fileinputname$.html' here>",
-    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, $fileinputname$SettingsFormModule]
-})
+@TemplateId("tenant resource id for '$fileinputname$.html' here>") // TemplateId here use for live reload in Jit mode, otherwise remove it.
 @Component({
     selector: '<YourComponentSelectorHere>',
     templateUrl: '$fileinputname$.html'
@@ -56,11 +42,21 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 }
 
+@OmniaControl({
+    id: '$guid1$',
+    bootstrapComponent: $fileinputname$Component,
+    title: '$fileinputname$',
+    icon: 'fa-cube',
+    group: 'Custom',
+    showInPageDesigner: true,
+    enableSettings: true,
+    ngfactoryModulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory'
+})
 @NgModule({
-    bootstrap: [BootstrapComponent],
     declarations: [$fileinputname$Component],
     entryComponents: [$fileinputname$Component],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, $fileinputname$SettingsFormModule],
+    providers: [LocalizationService, LocalizePrefix("")],
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, $fileinputname$SettingsFormModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }
