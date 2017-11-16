@@ -52,7 +52,7 @@ namespace $safeprojectname$.Features
         public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
         {
            resourceMapper
-            .AddOrUpdateTenantResourcesFrom<CoreMappings.TenantResources>();
+            .AddOrUpdateTenantResourcesFrom<TenantResources>();
 
             SetupPublicBundles(resourceMapper);
             SetupAdminBundles(resourceMapper);
@@ -72,7 +72,7 @@ namespace $safeprojectname$.Features
             // TODO: Change this to only bundle the resources needed in SharePoint
             resourceMapper
                 .CreateBundleFor(BundleTargets.SharePoint)
-                .Include<CoreMappings.TenantResources>();
+                .Include<TenantResources>();
             
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.SharePoint);
@@ -83,7 +83,7 @@ namespace $safeprojectname$.Features
             // TODO: Change this to only bundle the resources needed in Omnia admin
             resourceMapper
                 .CreateBundleFor(BundleTargets.OmniaAdmin)
-                .Include<CoreMappings.TenantResources>();
+                .Include<TenantResources>();
 
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.OmniaAdmin);
