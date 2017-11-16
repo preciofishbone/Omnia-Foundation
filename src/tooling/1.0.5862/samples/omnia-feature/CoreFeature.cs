@@ -72,18 +72,18 @@ namespace $safeprojectname$.Features
             // TODO: Change this to only bundle the resources needed in SharePoint
             resourceMapper
                 .CreateBundleFor(BundleTargets.SharePoint)
-                .Include<TenantResources>();
+                .Include<CoreMappings.TenantResources>();
             
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.SharePoint);
         }
 
-        private void SetupAdminBundles(TenantResourcesMapper resourceMapper)
+        private void SetupAdminBundles(CoreMappings.TenantResourcesMapper resourceMapper)
         {
             // TODO: Change this to only bundle the resources needed in Omnia admin
             resourceMapper
                 .CreateBundleFor(BundleTargets.OmniaAdmin)
-                .Include<TenantResources>();
+                .Include<CoreMappings.TenantResources>();
 
             resourceMapper
                 .SetBundlesSequence(500, BundleTargets.OmniaAdmin);
