@@ -1,21 +1,7 @@
-import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
+import { TemplateId, Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
+import { OmniaControl, OmniaControlBase, OmniaExtensibilityCommonModule, ControlConfigService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 
-
-@OmniaControl({
-    id: '$guid1$',
-    selector: '<YourComponentSelectorHere>',
-    title: '$fileinputname$',
-    icon: 'fa-cube',
-    group: 'Custom',
-    showInPageDesigner: true,
-    providers: [LocalizationService, LocalizePrefix("")],
-    enableAot: true,
-    modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
-    templateId: "<tenant resource id for '$fileinputname$.html' here>",
-    imports: [OmniaExtensibilityCommonModule]
-})
+@TemplateId("tenant resource id for '$fileinputname$.html' here>") // TemplateId here use for live reload in Jit mode, otherwise remove it.
 @Component({
     selector: '<YourComponentSelectorHere>',
     templateUrl: '$fileinputname$.html'
@@ -36,11 +22,20 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
     }
 }
 
+@OmniaControl({
+    id: '$guid1$',
+    title: '$fileinputname$',
+    icon: 'fa-cube',
+    group: 'Custom',
+    showInPageDesigner: true,
+	bootstrapComponent: $fileinputname$Component,
+    ngfactoryModulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory'
+})
 @NgModule({
-    bootstrap: [BootstrapComponent],
     declarations: [$fileinputname$Component],
     entryComponents: [$fileinputname$Component],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule],
+    providers: [LocalizationService, LocalizePrefix("")],
+    imports: [OmniaExtensibilityCommonModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }

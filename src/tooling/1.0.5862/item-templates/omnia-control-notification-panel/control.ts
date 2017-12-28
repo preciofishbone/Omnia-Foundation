@@ -1,6 +1,6 @@
 import { Component, NgModule, Inject, ViewContainerRef, OnInit} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Core, OmniaControl, BootstrapComponent, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, 
+import { Core, OmniaControl, OmniaControlBase, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule, 
     Utils, NotificationPanel, ControlConfigService, StatisticService, LocalizationService, LocalizePrefix} from "@omnia/foundation/extensibility";
 import { Control } from "@omnia/foundation/models";
 import { $fileinputname$SettingsForm} from "./$fileinputname$Settings";
@@ -13,21 +13,7 @@ export interface I$fileinputname$Scope extends Control.IControlWithViewedHistory
     items?:Array<{id:string, title:string, isNew?:boolean}>;
 }
 
-@OmniaControl({
-    id: $fileinputname$Component.controlId,
-    selector: '<YourComponentSelectorHere>',
-    title: '$fileinputname$',
-    icon: 'fa-cube',
-    group: 'Custom',
-    showInPageDesigner: true,
-    providers: [LocalizationService, LocalizePrefix("")],
-    enableAot: true,
-    modulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory',
-    templateId: "<tenant resource id for '$fileinputname$.html' here>",
-	declarations: [$fileinputname$SettingsForm],
-    entryComponents: [$fileinputname$SettingsForm],
-    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule]
-})
+
 @Component({
     selector: '<YourComponentSelectorHere>',
     templateUrl: '$fileinputname$.html'
@@ -92,11 +78,20 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
 
 NotificationPanel.registerNotificationPanelControl($fileinputname$Component.controlId, "Put localization for OmniaControl1Controller's display name here");
 
+@OmniaControl({
+    id: $fileinputname$Component.controlId,
+    title: '$fileinputname$',
+    icon: 'fa-cube',
+    group: 'Custom',
+    showInPageDesigner: true,
+	bootstrapComponent: $fileinputname$Component,
+    ngfactoryModulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory'
+})
 @NgModule({
-    bootstrap: [BootstrapComponent],
+	providers: [LocalizationService, LocalizePrefix("")],
     declarations: [$fileinputname$Component, $fileinputname$SettingsForm],
     entryComponents: [$fileinputname$Component, $fileinputname$SettingsForm],
-    imports: [BrowserModule, OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule],
+    imports: [OmniaExtensibilityCommonModule, OmniaExtensibilityFormModule],
     exports: [$fileinputname$Component]
 })
 export class $fileinputname$Module { }

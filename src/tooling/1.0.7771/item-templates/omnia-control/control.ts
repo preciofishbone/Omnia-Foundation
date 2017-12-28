@@ -24,11 +24,11 @@ export class $fileinputname$Component extends OmniaControlBase implements OnInit
 
 @OmniaControl({
     id: '$guid1$',
-    bootstrapComponent: $fileinputname$Component,
     title: '$fileinputname$',
     icon: 'fa-cube',
     group: 'Custom',
     showInPageDesigner: true,
+	bootstrapComponent: $fileinputname$Component,
     ngfactoryModulePath: '<your module ngfactory path>#$fileinputname$ModuleNgFactory'
 })
 @NgModule({
