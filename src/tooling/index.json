@@ -3,6 +3,12 @@
         "versionNumber": "1.0.5862",
         "requiredFoundationVersion": "1.0.5862",
         "requiredVSToolingVersion": "1.0.5862",
-        "vsToolingDownloadUrl": "http://www.google.se"
+        "vsToolingDownloadUrl": "http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.6924-beta.vsix"
+    },
+	{
+        "versionNumber": "1.0.7771",
+        "requiredFoundationVersion": "1.0.8957",
+        "requiredVSToolingVersion": "1.0.5862",
+        "vsToolingDownloadUrl": "http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.6924-beta.vsix"
     }
 ]
